@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
-
+import {ImageList} from './components/imageList'
+import {Main} from './components/main'
 @Component({
     selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    template: `
+        <image-list></image-list>
+        <main></main>
+    `,
+    directives:[ImageList,Main]
 })
 export class AppComponent { }
